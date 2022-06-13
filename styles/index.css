@@ -1,0 +1,66 @@
+#cont_1{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: teal;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    margin: 3% auto;
+
+}
+
+.content{
+    padding: 10px;
+}
+
+.post{
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.post img_div{
+    width: 100%;
+    height: auto;
+}
+
+.img_div img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+a{
+    color: inherit !important;
+}
+
+
+h2::first-letter{
+    font-size: 3rem;
+}
+
+
+.post:nth-child(3n+0){
+    background-color: cornflowerblue;
+}
+
+.post:nth-child(3n+1){
+    background-color: aqua;
+}
+
+.post:nth-child(3n+2){
+    background-color: beige;
+}
