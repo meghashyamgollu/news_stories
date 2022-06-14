@@ -7,7 +7,7 @@ var cont1 = document.getElementById("cont_1");
 let loading = document.createElement("img");
 console.log("cont_1:", cont1);
 
-let url1 = `http://localhost:3000/${categories[0]}`;
+let url1 = `https://newstoriesbackend.herokuapp.com/${categories[0]}`;
 
 getStoryIds(url1);
 
@@ -15,7 +15,7 @@ let new_button = document.getElementById("new_stories");
 new_button.addEventListener("click", function () {
   cont1.textContent = "";
   console.log("new_button:", new_button);
-  getStoryIds("http://localhost:3000/newstories");
+  getStoryIds("https://newstoriesbackend.herokuapp.com/newstories");
 });
 
 
@@ -23,7 +23,7 @@ let top_button = document.getElementById("top_stories");
 top_button.addEventListener("click", function () {
   cont1.textContent = "";
   console.log("top_button:", top_button);
-  getStoryIds("http://localhost:3000/topstories");
+  getStoryIds("https://newstoriesbackend.herokuapp.com/topstories");
 });
 
 
@@ -31,7 +31,7 @@ let best_button = document.getElementById("best_stories");
 best_button.addEventListener("click", function () {
   cont1.textContent = "";
   console.log("best_button:", best_button);
-  getStoryIds("http://localhost:3000/beststories");
+  getStoryIds("https://newstoriesbackend.herokuapp.com/beststories");
 });
 
 
